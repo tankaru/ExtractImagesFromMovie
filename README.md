@@ -14,5 +14,5 @@ This script
 1. move to working directory
 1. Modify video path $MAPILLARY_MOVIE in the script
 1. Specify extraction duration $DELTA_SECONDS in the script
-1. Run this script, and you'll get images with captured time
-1. Append geotags with other software, for example `C:\work\exiftool.exe -geotag="I:\track.gpx"  -overwrite_original C:\work\images '-geotime<${createdate}'`
+1. Run this script, and you'll get images. Captured time is appended to the images.
+1. Append geotags using other software, for example `C:\work\exiftool.exe -geotag="I:\track.gpx"  -overwrite_original C:\work\images '-geotime<${createdate}'`
