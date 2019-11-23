@@ -13,7 +13,8 @@ $DELTA_SECONDS = 10
 # And you'll get images
 
 # Append geotags with gis software, for example
-# C:\work\exiftool.exe -geotag="I:\track.gpx"  -overwrite_original C:\work\images '-geotime<${createdate}'
+# exiftool.exe -P -overwrite_original  "-createdate<filecreatedate" DIR
+# exiftool.exe -P -overwrite_original -geotag="track.gpx" "-geotime<${createdate}+09:00" DIR
 
 
 $option = "fps=1/" + $DELTA_SECONDS
